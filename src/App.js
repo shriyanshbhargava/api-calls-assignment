@@ -8,7 +8,7 @@ function App() {
 
   const getUserList = () => {
     setLoading(true);
-    axios.get("https://reqres.in/api/users?page=1").then((res) => {
+    axios.get("https://reqres.in/api/users?page=2").then((res) => {
       setUserList(res.data.data);
       setLoading(false);
     });
