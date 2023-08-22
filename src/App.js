@@ -8,7 +8,7 @@ function App() {
 
   const getUserList = () => {
     setLoading(true);
-    axios.get("https://reqres.in/api/users?page=2").then((res) => {
+    axios.get("https://reqres.in/api/users?page=1").then((res) => {
       setUserList(res.data.data);
       setLoading(false);
     });
@@ -23,7 +23,7 @@ function App() {
           onClick={getUserList}
           disabled={loading}
         >
-          Get User Data
+          {loading ? "Loading......" : "Get User Data"}
         </button>
       </div>{" "}
       <table className="dataTable">
@@ -46,9 +46,9 @@ function App() {
           ))}
           {userList.length === 0 && (
             <tr>
-              
+              <td>
                 <b>No data found to display.</b>
-              
+              </td>
             </tr>
           )}
         </tbody>
