@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgb(10, 27, 42);
+  color: rgb(5, 35, 35);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  font-size: 25px;
+  color: rgb(245, 242, 242);
+}
+
+.usersButton {
+  margin: 2rem 0rem;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(10, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  color: #000003;
+}
+
+.usersButton:hover {
+  background-color: #a1faf7;
+}
+
+.dataTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dataTable td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:hover {
+  background-color: #3613132e;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0d2185a0;
+  color: rgb(240, 244, 244);
+}
